@@ -1,8 +1,6 @@
 <?php
 $systemInfo = file_get_contents('system.info');
-$systemExp = explode('=||=', $systemInfo);
-$systemInfoName = $systemExp[0];
-$systemInfoVersion = $systemExp[1];
+$systemData = explode('=||=', $systemInfo);
 ?>
-<label><b>Name:</b> <?=$systemInfoName;?></label><br>
-<label><b>Version:</b> <?=$systemInfoVersion;?></label>
+<p><label><b>Name:</b> <?=$systemData[0];?></label></p>
+<p><label><b>Version:</b> <?=$systemData[1];?></label></p>
