@@ -21,13 +21,14 @@
 <td>
 <label for="enterKey">Method:</label>
 <select id="enterKey" onchange="
+var curSys = getButton.name;
 var keyVal = enterKey.options[enterKey.selectedIndex].value;
 if (keyVal == 'i') {
     enterPkg.value = 'from';
     enterRepo.value = '';
     enterUser.value = '';
 } else if (keyVal == 'r') {
-    enterPkg.value = '';
+    enterPkg.value = curSys;
     enterRepo.value = '';
     enterUser.value = '';
 } else if (keyVal == 'd') {
@@ -39,7 +40,7 @@ if (keyVal == 'i') {
 <option value='r'>Replace</option>
 <option value='d'>Remove</option>
 </select>
-<input type="button" onclick="get(enterKey.options[enterKey.selectedIndex].value,enterPkg.value,enterRepo.value,enterUser.value);" value="GET">
+<input id='getButton' name="<?=file_get_contents('system.info');?>" type="button" onclick="get(enterKey.options[enterKey.selectedIndex].value,enterPkg.value,enterRepo.value,enterUser.value);" value="GET">
 </td>
 </td>
 </tr>
