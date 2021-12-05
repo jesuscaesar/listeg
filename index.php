@@ -19,6 +19,11 @@ $appList = str_replace($dir.'/','',(glob($dir.'/*.app')));
 <link href="styles.css" rel="stylesheet">
 <script src="jquery.js"></script>
 <script src="base.js"></script>
+<script>
+window.onload = function() {
+    document.getElementById('enterSeq').focus();
+}
+</script>
 </head>
 <body>
 <div class="header">
