@@ -6,12 +6,12 @@
 </tr>
 <tr>
 <td class="iat">
-<textarea id="enterSeq" size="30" name="seq" type="text" placeholder="Enter GET command sequence"></textarea>
+<textarea id="enterSeq" style="width:90%;height:100%;position:relative;" rows="6" name="seq" placeholder="Enter GET command sequence"></textarea>
 </td>
 </tr>
 <tr>
 <td>
-<input type="button" onclick="seq(enterSeq.innerText);" value="GET">
+<input type="button" onclick="seq(enterSeq.value);" value="GET">
 </td>
 </tr>
 </table>
