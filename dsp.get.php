@@ -7,16 +7,6 @@
 </tr>
 <tr>
 <td class="iat">
-<label for="enterRepo">Git Host:</label>
-<select id="enterHost">
-<option value="68747470733a2f2f6769746875622e636f6d">GitHub</option>
-<option value="68747470733a2f2f6769746c61622e636f6d">GitLab</option>
-<option value="68747470733a2f2f6269746275636b65742e6f7267">BitBucket</option>
-</select>
-</td>
-</tr>
-<tr>
-<td class="iat">
 <label for="enterRepo">Git Repository:</label>
 <input id="enterRepo" size="30" name="repo" type="text" value="">
 </td>
@@ -35,6 +25,12 @@
 </tr>
 <tr>
 <td>
+<label for="enterRepo">Git Host:</label>
+<select id="enterHost">
+<option value="68747470733a2f2f6769746875622e636f6d">GitHub</option>
+<option value="68747470733a2f2f6769746c61622e636f6d">GitLab</option>
+<option value="68747470733a2f2f6269746275636b65742e6f7267">BitBucket</option>
+</select> 
 <label for="enterKey">Method:</label>
 <select id="enterKey" onchange="
 var curSys = getButton.name;
