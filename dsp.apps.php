@@ -1,7 +1,7 @@
 <?php
 foreach ($appList as $key=>$value) {
     $fileContent = file_get_contents($value);
-    $fileExp = explode('=||=', $fileContent);
+    $fileExp = explode('|[1]|', $fileContent);
     $fileTitle = $fileExp[0];
     $fileLink = $fileExp[2];
 ?>
