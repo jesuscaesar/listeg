@@ -17,8 +17,7 @@ $appList = str_replace($dir.'/','',(glob($dir.'/*.app')));
 <title>Listeg</title>
 <link rel="shortcut icon" href="favicon.png?rev=<?=time();?>" type="image/x-icon">
 <link href="styles.css" rel="stylesheet">
-<script src="jquery.js"></script>
-<script src="base.js"></script>
+<?php include 'base.incl.php'; ?>
 <script>
 window.onload = function() {
     document.getElementById('enterSeq').focus();
